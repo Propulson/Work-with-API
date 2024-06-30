@@ -30,10 +30,18 @@ data = [{
 }]
 my_layout = {
     'title': 'GitHub Repositories',
-    'xaxis': {'title': 'Repository Name'},
-    'yaxis': {'title': 'Stars'}
+    'titlefont': {'size': 28},
+    'xaxis': {
+        'title': 'Repository Name',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    },
+    'yaxis': {
+        'title': 'Stars',
+        'titlefont': {'size': 24},
+        'tickfont': {'size': 14},
+    }
 }
 fig = {'data': data, 'layout': my_layout}
 offline.plot(fig, filename='python-repos-chart.html')
-
 
